@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APNA Institute</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="top-nav">
+        <div class="logo-area">
+            <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="brand-text">
+                <h1>APNA INSTITUTE</h1>
+                <p>Knowledge is Future</p>
+                <small>Your Time Is Investment</small>
+            </div>
+        </div>
+
+        <button class="hamburger-btn" onclick="toggleNav()">
+            <i class="fas fa-bars" id="hamburger-icon"></i>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+            <a href="#about" onclick="closeMobileNav()">About</a>
+            <a href="#admissions" onclick="closeMobileNav()">Admissions</a>
+            <a href="#programs" onclick="closeMobileNav()">Programs</a>
+            <a href="#community" onclick="closeMobileNav()">Community</a>
+            <a href="javascript:void(0)" onclick="openModal('studentModal'); closeMobileNav()">Student Login</a>
+            <a href="javascript:void(0)" onclick="openModal('facultyModal'); closeMobileNav()">Faculty Login</a>
+        </div>
+    </div>
+
+    <div class="sub-nav">
+        <div class="sub-menu">
+            <a href="#mission">Mission & Philosophy</a>
+            <a href="#faculty">Our Faculty</a>
+            <a href="#maps">Maps</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#enquiry">Enquiry Now</a>
+        </div>
+        <a href="https://wa.me/919871279939" target="_blank" class="Message-btn">
+            <i class="fab fa-Message"></i> Message Now
+        </a>
+    </div>
+
+    <div class="banner-ticker">
+        <div class="ticker-content">
+            "Admissions Open! Enroll Now for Diploma and Certificate Courses. Both Online and Offline Classes Available.
+            For More Information, <a 
+            href="#program">Click Enquiry Now!</a>"
+        </div>
+    </div>
+
+    <div class="notice-bar">
+        <div class="notice-item">
+            <i class="fas fa-hand-point-right"></i> All Admissions Open for Diploma and Certificate Courses. <a
+                href="#programs">Click here for more information.</a>
+        </div>
+        <div class="notice-item">
+            <i class="fas fa-hand-point-right"></i> We Offer Referral Program to Participate Spray Motivation and
+            Education to Society and get it some goodwill for more information visit nearest branch.
+        </div>
+        <div class="notice-item">
+            <i class="fas fa-hand-point-right"></i> We Offer join 1st date of any month we offer heavy discount to all
+            courses visit nearest branch.
+        </div>
+    </div>
+
+    <div class="hero" id="mission">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Our Mission & Philosophy</h2>
+            <p>Our mission is to innovate sustainable solutions for a better tomorrow.</p>
+        </div>
+    </div>
+
+    <section class="about-welcome" id="about">
+        <h2>Welcome to Apna Institute</h2>
+        <p>At Our Institute, we are dedicated to providing high-quality education that prepares students for success in
+            their chosen careers. Our mission is to empower individuals through knowledge and innovation.</p>
+    </section>
+
+    <section class="admission-criteria" id="admissions">
+        <h2>Admissions Criteria</h2>
+        <ul>
+            <li>Completion of secondary education minimum qualification 8th pass (for Diploma courses)</li>
+            <li>Minimum Primary School Qualified (for Certificate courses)</li>
+            <li>Passing score in the entrance examination (if applicable)</li>
+        </ul>
+
+        <div class="apply-steps">
+            <h3>Steps to Apply:</h3>
+            <ol>
+                <li>Visit our Nearest Branch of ApnaInstitute.</li>
+                <li>Submit necessary documents, such as academic transcripts and identification proof.</li>
+                <li>Pay the application donation securely through our online payment gateway.</li>
+                <li>Receive confirmation of admission and details regarding orientation.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="programs-section" id="programs">
+        <h2>Our Programs</h2>
+
+        <div class="category-title">Certificate Courses</div>
+        <div class="grid-container">
+            <div class="course-card">
+                <h3>Basic of Computer</h3>
+                <div class="duration">Duration: 3 or 6 months</div>
+                <div class="jobs">Job Opportunities: Data Entry Operator, Office Assistant</div>
+            </div>
+            <div class="course-card">
+                <h3>English Spoken</h3>
+                <div class="duration">Duration: 3 or 6 months</div>
+                <div class="jobs">Job Opportunities: Customer Service Representative, Translator</div>
+            </div>
+            <div class="course-card">
+                <h3>Ms-Office</h3>
+                <div class="duration">Duration: 3 months</div>
+                <div class="jobs">Job Opportunities: Administrative Assistant, Office Manager</div>
+            </div>
+            <div class="course-card">
+                <h3>Tally</h3>
+                <div class="duration">Duration: 3 months</div>
+                <div class="jobs">Job Opportunities: Accountant, Finance Executive</div>
+            </div>
+        </div>
+
+        <div class="category-title">Diploma Courses</div>
+        <div class="grid-container">
+            <div class="course-card">
+                <h3>ADFA (Advanced Diploma in Financial Accounting)</h3>
+                <div class="duration">Duration: 1 year</div>
+                <div class="jobs">Job Opportunities: Financial Analyst, Tax Consultant</div>
+            </div>
+            <div class="course-card">
+                <h3>DCA (Diploma in Computer Applications)</h3>
+                <div class="duration">Duration: 1 year</div>
+                <div class="jobs">Job Opportunities: Software Developer, IT Support Specialist</div>
+            </div>
+            <div class="course-card">
+                <h3>DIT (Diploma in Information Technology)</h3>
+                <div class="duration">Duration: 1 year</div>
+                <div class="jobs">Job Opportunities: Network Administrator, Database Administrator</div>
+            </div>
+        </div>
+
+        <div class="category-title">Professional Courses</div>
+        <div class="grid-container">
+            <div class="course-card">
+                <h3>Web Designing</h3>
+                <div class="duration">Duration: 1 year</div>
+                <div class="jobs">Job Opportunities: Front-end Developer, UI/UX Designer</div>
+            </div>
+            <div class="course-card">
+                <h3>Web Development</h3>
+                <div class="duration">Duration: 1 year</div>
+                <div class="jobs">Job Opportunities: Full-stack Developer, Web Application Developer</div>
+            </div>
+            <div class="course-card">
+                <h3>Android App Development</h3>
+                <div class="duration">Duration: 1 year</div>
+                <div class="jobs">Job Opportunities: Mobile App Developer, Software Engineer</div>
+            </div>
+            <div class="course-card">
+                <h3>Graphic Designing</h3>
+                <div class="duration">Duration: 6 months</div>
+                <div class="jobs">Job Opportunities: Graphic Designer, Visual Content Creator</div>
+            </div>
+        </div>
+
+        <div class="category-title">Subject Tuition Available</div>
+        <div class="grid-container">
+            <div class="course-card">
+                <h3>Class 5th to 8th</h3>
+                <div class="duration">Medium : Hindi or English</div>
+                <div class="jobs">All Subject Available</div>
+            </div>
+            <div class="course-card">
+                <h3>9th to 10th</h3>
+                <div class="duration">Medium : Hindi or English</div>
+                <div class="jobs">All Subject Available</div>
+            </div>
+            <div class="course-card">
+                <h3>11th to 12th</h3>
+                <div class="duration">Medium : Hindi or English</div>
+                <div class="jobs">Economics, Geography, Political Science, and History</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="community-section" id="community">
+        <h2>Our Community</h2>
+        <p class="community-subtitle">Welcome to the vibrant community of ApnaInstitute, Where learning extends beyond
+            classrooms.<br>Join us in shaping the future through innovation, collaboration, and shared experiences.</p>
+
+        <div class="grid-container">
+            <div class="community-card">
+                <h3>Student Organizations</h3>
+                <p>Explore various clubs and organizations that cater to diverse interests and passions.</p>
+            </div>
+            <div class="community-card">
+                <h3>Events and Activities</h3>
+                <p>Participate in engaging events, workshops, and cultural activities throughout the year.</p>
+            </div>
+            <div class="community-card">
+                <h3>Social Responsibility</h3>
+                <p>Engage in community service projects and initiatives that make a positive impact.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us-section">
+        <h2>About Us</h2>
+        <p> Apna Institute is dedicated to providing premium higher education in computer science and related fields at
+            an affordable price. Our vision is to make advanced learning accessible to everyone, fostering a community
+            of innovation, excellence, and lifelong learning.</p>
+        <p>At Our Institute, we believe that quality education is the cornerstone of a prosperous society. Our programs
+            are designed to equip students with cutting-edge skills and knowledge, ensuring they are prepared to meet
+            the demands of the modern technological landscape. Our experienced faculty members are committed to
+            mentoring and guiding each student towards achieving their academic and professional goals.</p>
+        <p>Join us at Apna Institute, where your journey to a successful future in the tech industry begins.</p>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+        </div>
+    </section>
+
+    <section class="map-section" id="maps">
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.5186008892404!2d77.31174697612716!3d28.674127282869085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb63896dfc31%3A0x6b1f2373fb2a91fa!2sMILT%20INSTITUTE!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-box">
+                <p> Our Computer Education is dedicated to providing high-quality education and training in the field of
+                    computer science and technology.</p>
+            </div>
+            <div class="footer-box">
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#enquiry">Enquiry Now</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <div class="contact-item"><i class="fas fa-map-marker-alt"></i> E-2026 Dilshad Garden 101205</div>
+                <div class="contact-item"><i class="fas fa-phone"></i> 9871279939</div>
+                <div class="contact-item"><i class="fas fa-envelope"></i> Apnainstitute@gmail.com</div>
+            </div>
+            <div class="footer-box">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 Apna Institute. All rights reserved.
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="studentModal">
+        <div class="modal-card">
+            <h2>Student Login</h2>
+            <form onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <label>Student ID</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" required>
+                </div>
+                <button type="submit" class="btn-login">Login</button>
+                <button type="button" class="btn-close" onclick="closeModal('studentModal')">Close</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="facultyModal">
+        <div class="modal-card">
+            <h2>Faculty Login</h2>
+            <form onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <label>Client ID</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" required>
+                </div>
+                <button type="submit" class="btn-login">Login</button>
+                <button type="button" class="btn-close" onclick="closeModal('facultyModal')">Close</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleNav() {
+            const nav = document.getElementById('navMenu');
+            const icon = document.getElementById('hamburger-icon');
+            nav.classList.toggle('active');
+            if (nav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
+
+        function closeMobileNav() {
+            const nav = document.getElementById('navMenu');
+            const icon = document.getElementById('hamburger-icon');
+            if (nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
+
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal-overlay')) {
+                event.target.style.display = 'none';
+            }
+        };
+    </script>
+
+</body>
+
+</html>
